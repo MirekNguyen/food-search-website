@@ -1,0 +1,3 @@
+// Environment variable to connect to database
+.env
+vendor/
