@@ -1,6 +1,17 @@
+body {
+    background-color: #edf0f4;
+    font-family: "Robot Light";
+}
 .center {
-    display: flex;
-    justify-content: center;
+    /*display: flex;*/
+    /*justify-content: center;*/
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.container {
+    width: 100%;
 }
 
 #suggestion_html {
@@ -11,10 +22,14 @@
     background-color: aliceblue;
     cursor: pointer;
 }
+#inputBox, li {
+    font-size: 25px;
+    border-radius: 5px;
+    font-family: "Roboto Light";
+}
 
-
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
     #inputBox {
-        width: 90vw;
+        width: vw;
     }
 }
