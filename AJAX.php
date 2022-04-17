@@ -26,3 +26,4 @@ while ($fetch = pg_fetch_object($query)) {
 pg_close($connection);
 
 echo json_encode($result);
+
