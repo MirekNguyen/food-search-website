@@ -1,35 +1,51 @@
 body {
     background-color: #edf0f4;
-    font-family: "Robot Light";
+    font-family: "Robot Light", serif;
+    text-align: center;
 }
+
 .center {
-    /*display: flex;*/
-    /*justify-content: center;*/
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
+    display: grid;
+    place-items: center;
 }
+
 .container {
-    width: 100%;
+    width: 50%;
+    min-height: 53vw;
+    height: auto;
 }
 
 #suggestion_html {
     list-style: none;
     background-color: whitesmoke;
 }
-#suggestion_html li:hover {
+
+#suggestion_html li:hover, li:active {
     background-color: aliceblue;
     cursor: pointer;
 }
+
 #inputBox, li {
     font-size: 25px;
     border-radius: 5px;
-    font-family: "Roboto Light";
+    font-family: "Roboto Light", serif;
+    width: 100%;
+}
+#shownItem {
+    background-color: white;
+    width: 100%;
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+#shownItem p {
+    text-align: left;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
 @media only screen and (max-width: 800px) {
-    #inputBox {
-        width: vw;
+    .container {
+        width: 100%;
     }
 }
